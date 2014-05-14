@@ -20,7 +20,7 @@ class BH.Chrome.History
     @chromeAPI.history.deleteUrl url: url, ->
       callback()
 
-  deleteRange: (range, callback = ->) ->
+  deleteRange: (range, callback = ->) -> 
     throw "Start time needed" unless range.startTime?
     throw "End time needed" unless range.endTime?
 
